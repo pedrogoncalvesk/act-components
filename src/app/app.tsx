@@ -1,8 +1,10 @@
 import { Space, DatePicker, ConfigProvider, version } from 'antd';
 
 import Button from '../components/button';
+import ButtonPrimary from '../components/button-primary';
 import NxWelcome from './nx-welcome';
 import styles from './app.module.less';
+
 
 export function App() {
   return (
@@ -23,9 +25,12 @@ export function App() {
         >
           <Space>
             <DatePicker />
-            <Button type="primary" ghost={false}>
-              Primary Button
+            <Button ghost={false}>
+              Normal Button
             </Button>
+            <ButtonPrimary>
+              Primary button
+            </ButtonPrimary>
           </Space>
         </ConfigProvider>
       </div>
